@@ -18,10 +18,23 @@ class car{
 }
 
 
-var car1 =new car("BMW","570i",2,"black");
+var car1 =new car("FARRARI","570i",2,"red");
+var car2 =new car("BMW","370i",2,"silver");
+var car3 =new car("VW","470i",4,"black");
 
 
-console.log(car1.about());
+// document.getElementById()
+
+
+
+ document.getElementsByClassName("car1")[0].innerHTML = car1.about();
+ document.getElementsByClassName("car2")[0].innerHTML = car2.about();
+ document.getElementsByClassName("car3")[0].innerHTML = car3.about();
+
+
+
+
+
 
 
 
@@ -41,13 +54,14 @@ class animal{
     }
 
 }
-
-
 var anml1= new animal("tiger","bangladesh",70,"white");
+var anml2= new animal("lion","Africa",68,"golden");
+var anml3= new animal("Cangaroo","Austrilia",30,"silver");
 
 
-console.log(anml1.living());
-
+document.getElementsByClassName("anml1")[0].innerHTML = anml1.living();
+document.getElementsByClassName("anml2")[0].innerHTML = anml2.living();
+document.getElementsByClassName("anml3")[0].innerHTML = anml3.living();
 
 
 
@@ -68,6 +82,15 @@ class Person {
 
 
 var per1 =new Person("gregor",30,"developer",false);
+var per2 =new Person("mike müller",23,"marketing",false);
+var per3 =new Person("abdulla",32,"webdeveloper",true);
+
+
+
+document.getElementsByClassName("per1")[0].innerHTML = per1.showMessage();
+document.getElementsByClassName("per2")[0].innerHTML = per2.showMessage();
+document.getElementsByClassName("per3")[0].innerHTML = per3.showMessage();
+
 
 console.log(per1.showMessage());
 
