@@ -7,18 +7,18 @@
 
 class car{
 
+    constructor(name, mdl, dr, clr){
+        this. BrandName = name;
+        this. model = mdl;
+        this. doors = dr;
+        this. color = clr;
 
-    BrandName: "BMW",
-    model: "340A",
-    doors:2,
-    color:"Black",
-    available: ['austria', 'germany', 'usa'],
+
     about: function() {
     return this.BrandName +' is one of the most mordern car and it has ' + this.doors +'doors';
 
 
 
-constructor(){
 
 }
 about(){
@@ -26,6 +26,10 @@ about(){
 }
 
 }
+
+var car1 = new car ("")
+
+
 
 class animal{
 
