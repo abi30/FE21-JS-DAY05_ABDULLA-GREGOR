@@ -27,8 +27,6 @@ about(){
 
 }
 
-var car1 = new car ("")
-
 
 
 class animal{
